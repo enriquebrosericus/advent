@@ -11,6 +11,8 @@ def part_one(depths):
 
     for depth in depths[1:]:
         if depth > prev_depth:
+            print(depth)
+            #print(depth + ": increased")
             count_inc += 1
 
         prev_depth = depth
