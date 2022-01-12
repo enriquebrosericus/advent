@@ -8,9 +8,9 @@ with open('input.txt', 'r') as infile:
 
 biglist=[]
 
-    for i in data:
-        #list comprehension 
-        x = [int(a) for a in str(i)]
-        print(x)
-        #print(i)
-        #biglist.append(x)
+for i in data:
+    #list comprehension 
+    x = [int(a) for a in str(i)]
+    print(x)
+    #print(i)
+    #biglist.append(x)
