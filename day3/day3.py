@@ -30,17 +30,18 @@ gamma_totals = [[0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0]]
 print(len(biglist))
 
 while i < biglistlength:
+    #reset inner counter j to 0
+    j=0
     while j < itemlength:
         print(biglist[i][j]
         )
         if biglist[i][j] == 0:
-            print ("It's a zero")
             gamma_totals[0][j] += 1
-            j +=1
+            j+=1
         else :
             gamma_totals[1][j] += 1
-            j +=1
-    i +=1
+            j+=1
+    i+=1
 
 
 print(gamma_totals)
