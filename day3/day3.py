@@ -33,8 +33,7 @@ while i < biglistlength:
     #reset inner counter j to 0
     j=0
     while j < itemlength:
-        print(biglist[i][j]
-        )
+        #print(biglist[i][j])
         if biglist[i][j] == 0:
             gamma_totals[0][j] += 1
             j+=1
