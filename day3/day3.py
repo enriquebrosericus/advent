@@ -66,15 +66,15 @@ while i < itemlength:
     epsilon_final += loser
     #print("I ame the winner:  ", winner)
     #print("i am gamma_final", gamma_winner)
-    print("i am gamma_final", gamma_final)
-    print("i am epsilon_final", epsilon_final)
+    #print("i am gamma_final", gamma_final)
+    #print("i am epsilon_final", epsilon_final)
 
     #convert from binary to decimal
     gamma_decimal = int(gamma_final, 2)
     epsilon_decimal = int(epsilon_final, 2)
 
-    print("i am gamma_decimal", gamma_decimal)
-    print("i am epsilon_decimal", epsilon_decimal)
+    #print("i am gamma_decimal", gamma_decimal)
+    #print("i am epsilon_decimal", epsilon_decimal)
 
     final_answer = gamma_decimal * epsilon_decimal
     print("i am final_answer", final_answer)
