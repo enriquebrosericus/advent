@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+from multiprocessing.connection import answer_challenge
+
+
 with open('/Users/edawg/gitsome/advent/day3/input.txt', 'r') as infile:
     data = [line.strip() for line in infile]
 
@@ -44,6 +47,50 @@ while i < biglistlength:
 
 
 print(gamma_totals)
+
+#compare gamma lists elements and see if 0 or 1 is the most frequent
+i=0
+gamma_final=""
+epsilon_final=""
+while i < itemlength:
+    if gamma_totals[0][i] > gamma_totals[1][i]:
+        winner="0"
+        loser="1"
+    else:
+        winner="1"
+        loser="0"
+
+    i +=1 
+    #append to string
+    gamma_final += winner
+    epsilon_final += loser
+    #print("I ame the winner:  ", winner)
+    #print("i am gamma_final", gamma_winner)
+    print("i am gamma_final", gamma_final)
+    print("i am epsilon_final", epsilon_final)
+
+    #convert from binary to decimal
+    gamma_decimal = int(gamma_final, 2)
+    epsilon_decimal = int(epsilon_final, 2)
+
+    print("i am gamma_decimal", gamma_decimal)
+    print("i am epsilon_decimal", epsilon_decimal)
+
+    final_answer = gamma_decimal * epsilon_decimal
+    print("i am final_answer", final_answer)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
