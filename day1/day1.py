@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 my_file = open("input2.txt", "r")
 content_list = my_file. readlines()
 
