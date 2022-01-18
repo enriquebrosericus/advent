@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-my_file = open("input2.txt", "r")
+my_file = open("input.txt", "r")
 content_list = my_file. readlines()
 
 #clean up newlines in list
@@ -37,4 +37,31 @@ while i < len(stripped):
 print ("The number of mobigah numbas is: {}".format(mobigah))
 #print (mobigah)
 
+
+#part 2
+i = 0
+j = 0
+list_3 = []
+sum1 = 0
+
+while i < (len(stripped)-2):
+    while j <=2:
+        print("I am j:", j)
+        sum1 += stripped[i+j]
+        #print("i am sum1:",sum1)
+        j += 1
+    i +=1
+
+    #push results to list
+    print("i am sum1:",sum1)
+    list_3.append(sum1)
+    
+    #reset inner loop counter
+    j = 0
+    #reset sum1
+    sum1 = 0
+
+print (len(list_3))
+
+    
 
