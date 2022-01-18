@@ -46,14 +46,14 @@ sum1 = 0
 
 while i < (len(stripped)-2):
     while j <=2:
-        print("I am j:", j)
+        #print("I am j:", j)
         sum1 += stripped[i+j]
         #print("i am sum1:",sum1)
         j += 1
     i +=1
 
     #push results to list
-    print("i am sum1:",sum1)
+    #print("i am sum1:",sum1)
     list_3.append(sum1)
     
     #reset inner loop counter
@@ -64,4 +64,21 @@ while i < (len(stripped)-2):
 print (len(list_3))
 
     
+#should make better use of already defined logic from part one...but just doing again here for now
+i = 0
+mobigah = 0
+while i < len(list_3):
 
+  if i == 0 :
+    print(list_3[i] , ": (N/A - no previous measurement)")
+  elif  list_3[i] < list_3[i-1] :
+    print(list_3[i] , ': decreased')
+  elif  list_3[i] > list_3[i-1] :
+    print(list_3[i] , ': increased')
+    mobigah += 1
+  else :
+    print('NO CHANGE')
+
+  i += 1
+
+print ("The number of mobigah numbas is: {}".format(mobigah))
