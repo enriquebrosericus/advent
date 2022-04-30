@@ -3,7 +3,7 @@
 from multiprocessing.connection import answer_challenge
 
 
-with open('/Users/edawg/gitsome/advent/day3/input.txt', 'r') as infile:
+with open('day3/input.txt', 'r') as infile:
     data = [line.strip() for line in infile]
 
 
