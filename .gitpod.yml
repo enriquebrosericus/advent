@@ -2,3 +2,5 @@
 vscode:
   extensions:
     - 9j.amvim
+    - ms-python.python
+    - eamodio.gitlens
